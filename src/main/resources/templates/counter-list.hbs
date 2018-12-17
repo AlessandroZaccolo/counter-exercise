@@ -1,3 +1,7 @@
 <h1>List of counter</h1>
 
-<p> Counter has value {{counter}}</p> <a href="/counters/increment"> Increment </a>
+<a href="/counters/add"> Create counter</a>
+
+{{#each}}
+    <p> Counter {{counter}} has value {{value}}</p> <a href="/counters/increment"> Increment </a>
+{{/each}}
